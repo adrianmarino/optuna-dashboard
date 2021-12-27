@@ -1,0 +1,10 @@
+name: optuna-dashboard
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  #- mysql-connector-c
+  - mysqlclient
+  - pip
+  - pip:
+    - optuna-dashboard

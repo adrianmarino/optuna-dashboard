@@ -1,14 +1,12 @@
 [Unit]
-Description=RStudio Server
-Requires=docker.service
-After=docker.service
+Description=Optuna Dashboard for user %u
 
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-WorkingDirectory=~/optuna-dashboard
-ExecStart=~/optuna-dashboard/bin/start-optina-dashboard
-ExecStop=~/optuna-dashboard/bin/stop-optina-dashboard
+WorkingDirectory=%h/optuna-dashboard
+ExecStart=%h/optuna-dashboard/bin/start-optuna-dashboard
+ExecStop=%h/optuna-dashboard/bin/stop-optuna-dashboard
 TimeoutStartSec=0
 
 [Install]

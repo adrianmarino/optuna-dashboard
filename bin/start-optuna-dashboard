@@ -1,24 +1,17 @@
-#!/bin/bash
-# -----------------------------------------------------------------------------
-# Functions
-# -----------------------------------------------------------------------------
-function current_path() {
-    echo $(cd $(dirname $0); pwd)
-}
-
-function activate() {
-    eval "$(conda shell.bash hook)"
-    conda activate $1
-}
-# -----------------------------------------------------------------------------
-#
-#
-#
+#!/bin/zsh
 # -----------------------------------------------------------------------------
 # Main
 # -----------------------------------------------------------------------------
-source "$(current_path)/../config.conf"
-activate $ENV
+ABSPATH=$(readlink -f $0)
+ABSDIR=$(dirname $ABSPATH)
 
-nohup optuna-dashboard $DB_URL --port $PORT --host $HOST &
+source "$ABSDIR/../config.conf"
+source "$CONDA_PATH/etc/profile.d/conda.sh"
+
+echo "ENV: $ENV"
+conda activate $ENV
+
+echo "Start server..."
+/usr/bin/nohup optuna-dashboard $DB_URL --port $PORT --host $HOST &
 # -----------------------------------------------------------------------------
+

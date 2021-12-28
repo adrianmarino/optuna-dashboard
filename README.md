@@ -58,7 +58,6 @@ $ systemctl --user start optuna-dashboard
 `config.conf`:
 ```bash
 CONDA_PATH="/opt/miniconda3"
-CONDA_BIN="$CONDA_PATH/bin/conda"
 ENV="optuna-dashboard"
 DB_URL="mysql://root:1234@localhost/example"
 PORT="9090"

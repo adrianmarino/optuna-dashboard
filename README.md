@@ -1,9 +1,11 @@
-# Optuna dashboard setup
+# Optuna dashboard systemd
 
-Install optuna dashboard as systemd daemon under linux. This run with your regular linux user.
+* Install optuna dashboard as systemd daemon. 
+* Run daemon with your regular user.
 
 # Requirements
 
+* Linux
 * miniconda
 * mariadb/mysql
 

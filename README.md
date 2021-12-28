@@ -21,7 +21,8 @@ $ mysql -u root -e "CREATE DATABASE IF NOT EXISTS example"
 
 ```bash
 $ cd ~
-$ git clone https://github.com/adrianmarino/optuna-dashboard.git
+$ git clone https://github.com/adrianmarino/optuna-dashboard-systemd.git
+$ mv optuna-dashboard-systemd optuna-dashboard
 $ cd optuna-dashboard
 ```
 

@@ -13,7 +13,7 @@ Install optuna dashboard as systemd daemon under linux. This run with your regul
 $ mysql -u root -e "CREATE DATABASE IF NOT EXISTS example"
 ```
 
-# Setup Optuna dashboard
+# Setup optuna dashboard
 
 **Step 1**: Clone repo. 
 

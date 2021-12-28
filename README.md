@@ -5,8 +5,15 @@ Install optuna dashboard as systemd daemon under linux. This run with your regul
 # Requirements
 
 * miniconda
+* mariadb/mysql
 
-# Setup
+# Setup database
+
+```bash
+$ mysql -u root -e "CREATE DATABASE IF NOT EXISTS example"
+```
+
+# Setup Optuna dashboard
 
 **Step 1**: Clone repo. 
 

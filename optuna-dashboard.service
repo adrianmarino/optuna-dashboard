@@ -5,9 +5,9 @@ Description=Optuna Dashboard for user %u
 Type=oneshot
 RemainAfterExit=yes
 WorkingDirectory=%h/optuna-dashboard
-ExecStart=%h/optuna-dashboard/bin/start-optuna-dashboard
-ExecStop=%h/optuna-dashboard/bin/stop-optuna-dashboard
+ExecStart=%h/optuna-dashboard/bin/start
+ExecStop=%h/optuna-dashboard/bin/stop
 TimeoutStartSec=0
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

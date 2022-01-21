@@ -1,4 +1,4 @@
-# Optuna dashboard systemd
+# [Optuna](https://optuna.readthedocs.io/en/stable/) dashboard systemd
 
 * Install optuna dashboard as systemd daemon. 
 * Run daemon with your regular user.

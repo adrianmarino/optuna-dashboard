@@ -3,19 +3,19 @@
 * Install optuna dashboard as systemd daemon. 
 * Run daemon with your regular user.
 
-# Requirements
+## Requirements
 
 * Linux
 * miniconda
 * mariadb/mysql
 
-# Setup database
+## Setup database
 
 ```bash
 $ mysql -u root -e "CREATE DATABASE IF NOT EXISTS example"
 ```
 
-# Setup optuna dashboard
+## Setup optuna dashboard
 
 **Step 1**: Clone repo. 
 
@@ -56,7 +56,7 @@ $ systemctl --user enable optuna-dashboard
 $ systemctl --user start optuna-dashboard
 ```
 
-# Config file
+## Config file
 
 `config.conf`:
 ```bash
